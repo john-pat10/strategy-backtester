@@ -1,0 +1,13 @@
+[project]
+name = "backtester"
+version = "0.1.0"
+description = "Backtest personal investing strategies: lump sum, DCA, dip buying and more."
+requires-python = ">=3.10"
+dependencies = ["pandas", "numpy", "yfinance", "matplotlib", "streamlit", "plotly"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
